@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: rgb(13 148 136 / 0.25);
+    background-image: url("../src/assets/pattern-bg.png");
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scrollbar-color: #6C7275;
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+  
+  html::-webkit-scrollbar {
+    width: .6rem;
+  }
+  
+  html::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  html::-webkit-scrollbar-thumb {
+    background: #6C7275;
+  }
+  
