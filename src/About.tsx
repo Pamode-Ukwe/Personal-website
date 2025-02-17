@@ -10,7 +10,7 @@ const About = () => {
     <section id='about' className='py-4 bg-black/5'>
         <p className="text-5xl py-16 text-center font-ibm">
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-cyan-800 via-cyan-600 to bg-teal-800'>About Me</span></p>
-        <div className='grid lg:grid-cols-2 mx-44 py-8 xl:mx-64 gap-6'>
+        <div className='grid lg:grid-cols-2 md:mx-44 sm:mx-32 mx-20 py-8 xl:mx-64 gap-6'>
             <div className='col-span-1 hover:cursor-pointer bg-cyan-600 h-fit'>
                 <img src={holder} alt="" className='rounded-md mx-auto shadow-cyan-300/25 opacity-95 shadow-xl hover:shadow-pink-300/25 hover:shadow-md'/>
             </div>
@@ -25,10 +25,10 @@ const About = () => {
                 <a href='/MyCV.rtf' download="PamodeCV.rtf" className='font-semibold my-2 underline cursor-pointer text-teal-950 hover:text-pink-950 space-x-0 flex items-center gap-1'>Download my Resume <BiDownload/></a>
             </div>
         </div>
-        <p className="text-2xl text-center mt-16 mb-4">
+        <p className="text-2xl text-center mt-16 sm:mb-4 mb-8">
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-cyan-800 via-cyan-800 to bg-pink-800'>Technical Skillset</span>
         </p>
-        <p className='md:flex md:justify-center grid grid-cols-5 px-24 md:px-0 gap-8 pb-24'>
+        <p className='md:flex md:justify-center grid grid-cols-5 px-8 md:px-0 gap-8 pb-24'>
             <span><SiHtml5 className='size-10 mx-auto mb-1' style={{color: '#E34F26'}}/> <span className='flex justify-center'>HTML</span></span>
             <p><SiCss3 className='size-10 mx-auto mb-1' style={{color: '#1572B6'}}/> <span className='flex justify-center'>CSS</span></p>
             <p><SiJavascript className='bg-black size-10 mx-auto mb-1' style={{color: '#F7DF1E'}}/><span className='flex justify-center'>Javascript</span></p>

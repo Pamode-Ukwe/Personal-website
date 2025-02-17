@@ -51,7 +51,7 @@ const Contacts = () => {
       } 
   }
   return (
-    <section id="contact" className='px-24 xl:px-64 py-2 mb-20 relative'>
+    <section id="contact" className='sm:px-24 px-4 xl:px-64 py-2 mb-20 relative'>
       <video src={portal} autoPlay loop muted className="absolute top-0 left-0 w-full h-screen object-cover opacity-5 pointer-events-none"></video>
       <p className="text-5xl py-16 text-center font-ibm">
       <span className='text-transparent bg-clip-text bg-gradient-to-r from-cyan-800 via-cyan-800 to bg-pink-800'>Get in touch</span></p>

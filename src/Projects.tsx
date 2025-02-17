@@ -21,9 +21,9 @@ const Projects = () => {
     const videoData: Props[] = [
         {id: 1, thumbnail: screenShotOne, videoSrc: screenSaveOne, liveDemo: 'https://pamode-ukwe.github.io/Bennys-Pizza/', githubLink: 'https://github.com/Pamode-Ukwe/Bennys-Pizza',
             description: 'A pizza website that allows users to order pizza online and have it delivered to their location. The website is "light" and was built using HTML, CSS, and JavaScript to show that I know my way around the foundational tools if i need to go vanilla.'},
-        {id: 2, thumbnail: screenShotTwo, videoSrc: screenSaveTwo, liveDemo: 'https://footwear-shop-ggfcb.vercel.app/', githubLink: 'https://github.com/Pamode-Ukwe/footwear-shop',
+        {id: 2, thumbnail: screenShotTwo, videoSrc: screenSaveTwo, liveDemo: 'https://footwear-shop-6vyk.vercel.app/', githubLink: 'https://github.com/Pamode-Ukwe/footwear-shop',
             description: 'A sneaker store that allows users to view and purchase sneakers. The website was built using React, TypeScript, Tailwind CSS, Framer Motion, Zod and Zustand for state management. The products were fetched from a fake store API and stored.'},
-        {id: 3, thumbnail: screenShotThree, videoSrc: screenSaveThree, liveDemo: 'https://b-con-construction-7nwo.vercel.app/', githubLink: 'https://github.com/Pamode-Ukwe/BCon-construction',
+        {id: 3, thumbnail: screenShotThree, videoSrc: screenSaveThree, liveDemo: 'https://b-con-construction-uzmi.vercel.app/', githubLink: 'https://github.com/Pamode-Ukwe/BCon-construction',
             description: 'A construction website that allows users to view the companys projects, achievements, guarantees and request construction services. It was built using React, TypeScript, Tailwind CSS and Framer Motion. The idea came from a vanilla HTML, CSS and JavaScript project on YouTube that I decided to build on React and add my own ideas with few pages, animations and designs.'},
         {id: 4, thumbnail: screenShotFour, videoSrc: screenSaveFour, githubLink: 'https://github.com/Pamode-Ukwe/linkshare-webapp',
             description: 'A link-sharing app that allows users to share their social media links and other links in one place. The website was built using Next.js, TypeScript, Tailwind CSS, Zustand for state management and MongoDB for authentication and database. Sadly,  I encountered unforeseen deployment challenges due to an initial misconfiguration in the project setup and I am currently migrating this project to a new Next.js environment that ensures a smooth deployment ⏳.'}
@@ -33,7 +33,7 @@ const Projects = () => {
         <p className="text-5xl py-12 text-center font-ibm">
         <span className='text-transparent bg-clip-text bg-gradient-to-r from-cyan-700 via-cyan-700 to bg-teal-700'>Portfolio</span></p>
         <p className='text-pink-950 my-2 ml-32 text-sm font-semibold font-lexend'>*Hover to watch demonstrations</p>
-        <div className="grid md:grid-cols-2 mx-32 gap-12">
+        <div className="grid md:grid-cols-2 md:mx-32 sm:mx-20 mx-8 gap-12">
             { videoData.map((video) => <div key={video.id}><VideoThumbnail githubLink={video.githubLink} description={video.description} liveDemo={video.liveDemo} id={video.id} thumbnail={video.thumbnail} videoSrc={video.videoSrc}/></div>) }
         </div>
     </section>

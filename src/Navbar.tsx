@@ -52,7 +52,7 @@ const Navbar = () => {
 
         <div
           className={`absolute top-16 right-0 bg-cyan-600 text-white shadow-lg rounded-md max-w-xs w-full transition-transform duration-300 ease-in-out ${
-            menu ? "translate-x-0" : "translate-x-full"
+            menu ? "translate-x-0" : "hidden"
           }`}
         >
           <ul className="grid gap-4 p-4 md:hidden">
