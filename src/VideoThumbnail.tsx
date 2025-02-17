@@ -27,7 +27,7 @@ const VideoThumbnail = ({thumbnail, videoSrc, liveDemo, description, githubLink}
         <div className="h-80 col-span-1 rounded-lg relative overflow-hidden" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
             <img src={thumbnail} alt="Project" className='h-80 rounded-lg w-full hover:cursor-pointer absolute hover:hidden object-cover z-10'/>
             <video src={videoSrc} ref={videoRef} muted loop className='absolute h-80 w-full object-cover cursor-pointer z-0'></video>
-            { isShowing &&  <div className='bg-stone-200 text-teal-900 px-4 absolute z-20 w-full h-full max-w-prose space-y-2 py-8 text-lg'>{description}</div> }
+            { isShowing &&  <div className='bg-stone-200 text-teal-900 px-4 absolute z-20 w-full text-xs h-full max-w-prose space-y-2 py-8 sm:text-lg'>{description}</div> }
         </div>
         <div className='flex justify-between items-center my-4 bg-cyan-600 text-white rounded-sm'>
             <a href={liveDemo} className = {buttonStyles} target='_blank' rel='noopener noreferrer'>Live Demo</a>|
