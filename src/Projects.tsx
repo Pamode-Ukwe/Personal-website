@@ -32,7 +32,7 @@ const Projects = () => {
     <section id='portfolio' className='pt-12 bg-black/15 pb-16'>
         <p className="text-5xl py-12 text-center font-ibm">
         <span className='text-transparent bg-clip-text bg-gradient-to-r from-cyan-700 via-cyan-700 to bg-teal-700'>Portfolio</span></p>
-        <p className='text-pink-950 my-2 ml-32 text-sm font-semibold font-lexend'>*Hover to watch demonstrations</p>
+        <p className='text-pink-950 my-2 ml-32 text-sm font-semibold font-lexend'>*Hover to watch demonstrations (PC)</p>
         <div className="grid md:grid-cols-2 md:mx-32 sm:mx-20 mx-8 gap-12">
             { videoData.map((video) => <div key={video.id}><VideoThumbnail githubLink={video.githubLink} description={video.description} liveDemo={video.liveDemo} id={video.id} thumbnail={video.thumbnail} videoSrc={video.videoSrc}/></div>) }
         </div>
