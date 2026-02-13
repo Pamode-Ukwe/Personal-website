@@ -54,6 +54,8 @@ const Projects = () => {
       id: 4,
       thumbnail: screenShotFour,
       videoSrc: screenSaveFour,
+      liveDemo:
+        "https://budget-friendly-r73m3r5vr-pamode-ukwes-projects.vercel.app/",
       githubLink:
         "https://budget-friend-deploy-mpw0xgqkz-pamode-ukwes-projects.vercel.app",
       description:
